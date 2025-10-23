@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Interactive BOGO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <h1>YAY! It's BOGO</h1>
+
+    <section class="card-list">
+      <!-- CARD 1 -->
+      <article class="card" data-price="10" data-units="1" tabindex="0">
+        <div class="card-top">
+          <div class="radio-shell"><input type="radio" name="unit" class="card-radio"></div>
+          <div class="card-info">
+            <div class="title">1 Unit</div>
+            <div class="subtitle">Standard Price</div>
+          </div>
+          <div class="card-price">
+            <div class="price-text">$10.00 USD</div>
+            <div class="old-price"><del>$24.00 USD</del></div>
+          </div>
+        </div>
+
+        <div class="card-expanded">
+          <label>Size
+            <select class="size-select">
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+          </label>
+
+          <label>Color
+            <select class="color-select">
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </label>
+        </div>
+      </article>
+
+      <!-- CARD 2 (most popular) -->
+      <article class="card popular" data-price="18" data-units="2" tabindex="0">
+        <div class="popular-badge">MOST POPULAR</div>
+
+        <div class="card-top">
+          <div class="radio-shell"><input type="radio" name="unit" class="card-radio"></div>
+          <div class="card-info">
+            <div class="title">2 Unit</div>
+            <div class="subtitle">Best Value</div>
+          </div>
+          <div class="card-price">
+            <div class="price-text">$18.00 USD</div>
+            <div class="old-price"><del>$24.00 USD</del></div>
+          </div>
+        </div>
+
+        <div class="card-expanded">
+          <label>Size (1)
+            <select class="size-select" data-index="1">
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+          </label>
+
+          <label>Color (1)
+            <select class="color-select" data-index="1">
+              <option>Black</option><option>White</option><option>Blue</option>
+            </select>
+          </label>
+
+          <label>Size (2)
+            <select class="size-select" data-index="2">
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+          </label>
+
+          <label>Color (2)
+            <select class="color-select" data-index="2">
+              <option>Black</option><option>White</option><option>Green</option>
+            </select>
+          </label>
+        </div>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card" data-price="24" data-units="3" tabindex="0">
+        <div class="card-top">
+          <div class="radio-shell"><input type="radio" name="unit" class="card-radio"></div>
+          <div class="card-info">
+            <div class="title">3 Unit</div>
+            <div class="subtitle">Family Pack</div>
+          </div>
+          <div class="card-price">
+            <div class="price-text">$24.00 USD</div>
+            <div class="old-price"><del>$24.00 USD</del></div>
+          </div>
+        </div>
+
+        <div class="card-expanded">
+          <label>Size (1)
+            <select class="size-select" data-index="1">
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+          </label>
+
+          <label>Color (1)
+            <select class="color-select" data-index="1">
+              <option>Black</option><option>White</option><option>Red</option>
+            </select>
+          </label>
+
+          <label>Size (2)
+            <select class="size-select" data-index="2">
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+          </label>
+
+          <label>Color (2)
+            <select class="color-select" data-index="2">
+              <option>Black</option><option>White</option><option>Blue</option>
+            </select>
+          </label>
+
+          <label>Size (3)
+            <select class="size-select" data-index="3">
+              <option>S</option><option>M</option><option>L</option>
+            </select>
+          </label>
+
+          <label>Color (3)
+            <select class="color-select" data-index="3">
+              <option>Black</option><option>White</option><option>Green</option>
+            </select>
+          </label>
+        </div>
+      </article>
+    </section>
+
+    <section class="summary">
+      <div class="delivery">Free Delivery</div>
+      <div class="total-row">Total: <strong id="total">$0.00 USD</strong></div>
+      <button id="addCartBtn" class="add-btn">+ Add to Cart</button>
+      <div class="powered">@ Powered by Pumper</div>
+    </section>
+  </main>
+
+  <!-- toast popup -->
+  <div id="toast" class="toast" role="status" aria-live="polite">Item added successfully!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
