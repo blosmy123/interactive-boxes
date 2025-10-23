@@ -1,7 +1,7 @@
 # 🧩 Interactive Boxes
 
 <p align="center">
-  <img src="screenshot.png" alt="Interactive Boxes Preview" width="600">
+  <img src="Screenshot 2025-10-23 133916.png" alt="Interactive Boxes Preview" width="600">
 </p>
 
 This is a simple **Front-End Technical Support Task** project built using **HTML, CSS, and Vanilla JavaScript** — created as part of the screening for the *Technical Frontend Customer Support* position.
